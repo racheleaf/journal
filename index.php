@@ -21,7 +21,7 @@
 
 <div class="entry" id="newPost">
  <h2>New Entry Form</h2>
- <form action="submit.php" method="post">
+ <form action="index.php" method="post">
   Entry Type: <br>
   <input type="radio" name="type" value="question"> Question/Thought <br>
   <input type="radio" name="type" value="hm"> Hm <br>
@@ -44,6 +44,7 @@
 
 <div class="entry" id="recent">
  <h2>Recent Entries</h2>
+ <p>Your entry is: <?php echo $_POST["entry"]; ?> </p>
 </div>
 
 </body>
